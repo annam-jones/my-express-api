@@ -53,5 +53,49 @@ export default [
         "The Last Supper",
         "Vitruvian Man"
       ]
+    },
+    {
+        "id": 6,
+        "name": "Georgia O'Keeffe",
+        "nationality": "American",
+        "description": "Known as the 'Mother of American Modernism,' O'Keeffe is famous for her paintings of enlarged flowers, skyscrapers, and New Mexico landscapes.",
+        "famous_works": [
+            "Jimson Weed",
+            "Black Iris",
+            "Red Canna"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Salvador Dalí",
+        "nationality": "Spanish",
+        "description": "A leading figure in the Surrealist movement, Dalí's work is characterized by dreamlike imagery and eccentric themes.",
+        "famous_works": [
+            "The Persistence of Memory",
+            "The Elephants",
+            "The Metamorphosis of Narcissus"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Michelangelo",
+        "nationality": "Italian",
+        "description": "A Renaissance sculptor, painter, and architect, Michelangelo is celebrated for his mastery of human anatomy and artistic innovation.",
+        "famous_works": [
+            "David",
+            "The Sistine Chapel Ceiling",
+            "Pietà"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Henri Matisse",
+        "nationality": "French",
+        "description": "A leading figure in modern art, Matisse is renowned for his use of vibrant colors and bold, fluid shapes.",
+        "famous_works": [
+            "The Dance",
+            "Woman with a Hat",
+            "Blue Nude II"
+        ]
     }
   ]

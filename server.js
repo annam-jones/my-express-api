@@ -63,7 +63,7 @@ app.put("/artists/:name", async function (req, res) {
         { name: artistName},
         { $set: updatedData},
         { new: true, runValidators:true}
-    );
+    )
 
     res.send(updatedArtist)
 });

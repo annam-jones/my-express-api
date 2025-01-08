@@ -62,7 +62,7 @@ app.delete('/artists/:id', function (req, res) {
         return currentArtist.id === artistID;
     });
     console.log(artist)
-    divisions.splice(divisionIndex, 1)
+    artists.splice(artistIndex, 1)
 
     res.sendStatus(204)
 

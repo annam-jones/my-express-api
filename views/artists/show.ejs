@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/show.css">
+</head>
+
+<body>
+  
+  <%- include('../partials/html-head') %>
+  <%- include('../partials/nav') %>
+  <div id="artist-container">
+
+    
+    <h1><%= artist.name %></h1>
+    <p><strong>Nationality:</strong> <%= artist.nationality %></p>
+    <p><strong>Description:</strong> <%= artist.description %></p>
+
+    <h2>Famous Works</h2>
+    <ul>
+      <% artist.famous_works.forEach((work) => { %>
+        <li><%= work %></li>
+      <% }) %>
+    </ul>
+
+    
+    <div id="button-container">
+      
+     
+     
+
+      <% if (user) { %>
+      <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= artist.name %></button>
+      </form>
+
+      <a href="/artists/update/<%= artist._id %>">
+        <button type="button">Update Artist</button>
+      </a>
+      <% } %>
+
+      
+      <form action="/" method="GET">
+        <button type="submit">Home</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+

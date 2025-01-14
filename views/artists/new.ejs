@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Artist</title>
+    <link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+    <%- include('../partials/html-head') %>
+    <%- include('../partials/nav') %>
+    <h1>Create an Artist 🌸 </h1>
+   
+    <form action="/artists" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="nationality">Nationality:</label>
+            <input type="text" name="nationality" id="nationality" required />
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" name="description" id="description" />
+        </div>
+
+        <div class="form-group">
+            <label for="famous_works">Famous Works:</label>
+            <input type="text" name="famous_works" id="famous_works"/>
+        </div>
+
+        <div class="form-group">
+            <label for="addArtist">Looks good?</label>
+            <input type="checkbox" name="addArtist" id="artistName" />
+        </div>
+
+       
+        <button type="submit">Add Artist</button>
+    </form>
+
+    
+    <form action="/" method="GET">
+        <button type="submit">Home</button>
+    </form>
+</body>
+
+</html>

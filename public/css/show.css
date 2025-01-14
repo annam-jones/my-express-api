@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  nav {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000; 
+  }
+  
+  .nav-bar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-bar-link:hover {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  .nav-bar-link.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  #artist-container {
+    width: 50%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #artist-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  
+  #artist-container p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+ 
+  #artist-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #artist-container ul li {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  
+  #button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  
+  #button-container button {
+    background-color: rgb(179, 217, 163);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  #button-container button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  #button-container a button {
+    background-color: #45a049;
+  }
+  
+  #button-container a button:hover {
+    background-color: #388e3c;
+  }
+  
+  
+  #button-container form button {
+    background-color: #d32f2f;
+  }
+  
+  #button-container form button:hover {
+    background-color: #c62828;
+  }
+  
+ 
+  #button-container form button:last-child {
+    background-color: #45a049;
+  }
+  
+  #button-container form button:last-child:hover {
+    background-color: #45a049;
+  }
+  
+  
+  #button-container a {
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  

@@ -1,0 +1,111 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  nav {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000; 
+  }
+  .nav-bar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-bar-link:hover {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  .nav-bar-link.active {
+    background-color: #4CAF50;
+    color: white;
+  } 
+ 
+  #form-container {
+    width: 50%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  #form-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  #form-container button {
+    background-color: rgb(179, 217, 163);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #form-container button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  #form-container form button:last-child {
+    background-color: #45a049;
+    margin-top: 20px;
+  }
+  
+  #form-container form button:last-child:hover {
+    background-color: #45a049;
+  }
+  
+  

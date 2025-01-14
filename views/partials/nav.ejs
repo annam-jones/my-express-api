@@ -1,0 +1,13 @@
+
+<nav>
+    <a class="nav-bar-link" href="/">Home</a>
+    <a class="nav-bar-link" href="/artists">All Artists</a>
+    <a class="nav-bar-link" href="/artists/new">Add an Artist</a>
+    <% if (!user) { %>
+    <a class="nav-bar-link" href="/signup">Sign Up</a>
+    <a class="nav-bar-link" href="/login">Log In</a>
+    <% } %> <% if (user) { %>
+    <a class="nav-bar-link" href="/user/logout">Log out</a>
+    <% } %>
+  </nav>
+  
